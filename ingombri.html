@@ -4,12 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Box Model in CSS</title>
+    <style>
+      /* STILI SUL TITOLO */
+      h1 {
+        display: inline-block;
+        margin-bottom: 3em;
+        border: 1px solid black;
+        padding-bottom: 2em;
+        width: 600px;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        margin-left: 30px;
+      }
+
+      /* STILI SUI PARAGRAFI */
+
+      #first {
+        border: 2px solid red;
+        margin-bottom: 80px;
+        padding-bottom: 80px;
+        background-color: bisque;
+        padding-left: 42px;
+        margin-left: 115px;
+      }
+
+      main p:nth-of-type(2) {
+        /* ogni secondo paragrafo di un gruppo di paragrafi dentro main */
+        border: 2px solid black;
+      }
+
+      section div {
+        /* tutti i div dentro tutti i section */
+        border: 1px solid green;
+        display: inline-block;
+        width: 50%; /* 50% è troppo e li fa andare a capo */
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Parliamo di Box Model e di ingombri</h1>
     </header>
-    <main></main>
+    <main>
+      <p id="first">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+        nesciunt sed esse sapiente commodi tempora exercitationem omnis itaque
+        perferendis eius nobis placeat, quisquam vitae dolore quibusdam quia
+        amet voluptate consequatur. Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Inventore nesciunt sed esse sapiente commodi tempora
+        exercitationem omnis itaque perferendis eius nobis placeat, quisquam
+        vitae dolore quibusdam quia amet voluptate consequatur.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+        nesciunt sed esse sapiente commodi tempora exercitationem omnis itaque
+        perferendis eius nobis placeat, quisquam vitae dolore quibusdam quia
+        amet voluptate consequatur. Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Inventore nesciunt sed esse sapiente commodi tempora
+        exercitationem omnis itaque perferendis eius nobis placeat, quisquam
+        vitae dolore quibusdam quia amet voluptate consequatur.
+      </p>
+      <section>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed tenetur maiores exercitationem dolorem quisquam ut, harum placeat debitis nulla, quasi, cupiditate labore. Laboriosam cum nam, ut suscipit alias cupiditate!</div><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed tenetur maiores exercitationem dolorem quisquam ut, harum placeat debitis nulla, quasi, cupiditate labore. Laboriosam cum nam, ut suscipit alias cupiditate!</div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
